@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 
 export default function MissionSection() {
   return (
@@ -30,7 +31,7 @@ export default function MissionSection() {
           max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-center relative z-10
         "
       >
-        {/* Left Placeholder Image */}
+        {/* Left Image */}
         <div
           className="
             relative w-full h-[420px] rounded-2xl overflow-hidden shadow-ph-dark reveal
@@ -38,6 +39,14 @@ export default function MissionSection() {
             dark:bg-gradient-to-b dark:from-dark-elevated dark:via-dark-section dark:to-dark-black
           "
         >
+          <Image
+            src="/images/img1.jpg"
+            alt="Amazing Grace Ministries Mission Image Left"
+            fill
+            sizes="(max-width: 1024px) 100vw, 33vw"
+            className="object-cover"
+            priority
+          />
           <div className="absolute inset-0 bg-black/10 dark:bg-transparent" />
         </div>
 
@@ -73,7 +82,7 @@ export default function MissionSection() {
           </div>
         </div>
 
-        {/* Right Placeholder Image */}
+        {/* Right Image */}
         <div
           className="
             relative w-full h-[420px] rounded-2xl overflow-hidden shadow-ph-dark reveal reveal-delay-2
@@ -81,9 +90,17 @@ export default function MissionSection() {
             dark:bg-gradient-to-b dark:from-dark-elevated dark:via-dark-section dark:to-dark-black
           "
         >
+          <Image
+            src="/images/img2.jpg"
+            alt="Amazing Grace Ministries Mission Image Right"
+            fill
+            sizes="(max-width: 1024px) 100vw, 33vw"
+            className="object-cover"
+          />
           <div className="absolute inset-0 bg-black/10 dark:bg-transparent" />
         </div>
       </div>
     </section>
   )
 }
+

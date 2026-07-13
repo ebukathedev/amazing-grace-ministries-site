@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import ThemeToggle from './ThemeToggle'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -36,10 +37,23 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
         {/* Logo zone */}
         <div className="flex items-center gap-3">
-          <div className="w-[52px] h-[52px] rounded-full border-2 border-light-charcoal bg-light-mid flex items-center justify-center dark:border-dark-border dark:bg-dark-card">
-            <span className="font-body font-bold text-[10px] text-light-charcoal tracking-widest dark:text-white">
-              AGM
-            </span>
+          <div className="w-[52px] h-[52px] rounded-full border border-light-charcoal bg-light-mid flex items-center justify-center dark:border-dark-border dark:bg-dark-card">
+            <Image
+              src="/logo-white.svg"
+              alt="Amazing Grace Ministries Logo"
+              width={48}
+              height={48}
+              priority
+              className="object-contain hidden dark:block"
+            />
+            <Image
+              src="/logo-dark.svg"
+              alt="Amazing Grace Ministries Logo"
+              width={48}
+              height={48}
+              priority
+              className="object-contain dark:hidden"
+            />
           </div>
           <div>
             <h1 className="font-display font-bold text-[17px] leading-tight text-light-charcoal dark:text-white">

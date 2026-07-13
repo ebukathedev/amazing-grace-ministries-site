@@ -1,4 +1,5 @@
 import { Clock, MapPin, Navigation, Facebook, Instagram, Youtube, Music2, Twitter } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Footer() {
   const quickLinks1 = [
@@ -21,8 +22,6 @@ export default function Footer() {
     { icon: Facebook, href: '#facebook' },
     { icon: Instagram, href: '#instagram' },
     { icon: Youtube, href: '#youtube' },
-    { icon: Music2, href: '#music' },
-    { icon: Twitter, href: '#twitter' },
   ]
 
   return (
@@ -36,8 +35,23 @@ export default function Footer() {
           <div className="flex flex-col">
             {/* Logo zone */}
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-14 h-14 rounded-full border border-dark-border bg-dark-card flex items-center justify-center font-body font-bold text-white text-xs tracking-widest">
-                AGM
+              <div className="w-14 h-14 rounded-full border border-dark-border bg-light-mid flex items-center justify-center font-body font-bold text-white text-xs tracking-widest dark:bg-dark-card">
+                    <Image
+                    src="/logo-white.svg"
+                    alt="Amazing Grace Ministries Logo"
+                    width={48}
+                    height={48}
+                    priority
+                    className="object-contain hidden dark:block"
+                  />
+                  <Image
+                    src="/logo-dark.svg"
+                    alt="Amazing Grace Ministries Logo"
+                    width={48}
+                    height={48}
+                    priority
+                    className="object-contain dark:hidden"
+                  />
               </div>
               <div>
                 <h2 className="font-display font-bold text-xl text-white">

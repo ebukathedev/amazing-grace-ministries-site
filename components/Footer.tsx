@@ -1,18 +1,19 @@
 import { Clock, MapPin, Navigation, Facebook, Instagram, Youtube, Music2, Twitter } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Footer() {
   const quickLinks1 = [
-    { label: 'About Us', href: '#about' },
-    { label: 'Events', href: '#events' },
-    { label: 'Sermons', href: '#sermons' },
-    { label: 'Give', href: '#give' },
+    { label: 'About Us', href: '/about' },
+    { label: 'Events', href: '/events' },
+    { label: 'Sermons', href: '/sermons' },
+    { label: 'Give', href: '/give' },
     { label: 'Employment', href: '#employment' },
   ]
 
   const quickLinks2 = [
-    { label: 'Visit', href: '#visit' },
-    { label: 'Contact Us', href: '#contact' },
+    { label: 'Visit', href: '/plan-your-visit' },
+    { label: 'Contact Us', href: '/contact' },
     { label: 'Community', href: '#community' },
     { label: 'Terms of Use', href: '#terms' },
     { label: 'Privacy Policy', href: '#privacy' },
@@ -76,12 +77,12 @@ export default function Footer() {
             <div className="flex flex-wrap gap-x-2 items-center mb-1.5">
               {quickLinks1.map((link, idx) => (
                 <div key={link.label} className="flex items-center gap-2">
-                  <a
+                  <Link
                     href={link.href}
                     className="font-body text-[13px] text-white/60 hover:text-white transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                   {idx < quickLinks1.length - 1 && (
                     <span className="text-dark-border text-sm">|</span>
                   )}
@@ -93,12 +94,12 @@ export default function Footer() {
             <div className="flex flex-wrap gap-x-2 items-center">
               {quickLinks2.map((link, idx) => (
                 <div key={link.label} className="flex items-center gap-2">
-                  <a
+                  <Link
                     href={link.href}
                     className="font-body text-[13px] text-white/60 hover:text-white transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                   {idx < quickLinks2.length - 1 && (
                     <span className="text-dark-border text-sm">|</span>
                   )}

@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import ThemeToggle from './ThemeToggle'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -17,11 +18,11 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { label: 'PLAN YOUR VISIT', href: '#visit' },
-    { label: 'SERMONS', href: '#sermons' },
-    { label: 'EVENTS', href: '#events' },
-    { label: 'GIVE', href: '#give' },
-    { label: 'CONTACT US', href: '#contact' },
+    { label: 'PLAN YOUR VISIT', href: '/plan-your-visit' },
+    { label: 'SERMONS', href: '/sermons' },
+    { label: 'EVENTS', href: '/events' },
+    { label: 'GIVE', href: '/give' },
+    { label: 'CONTACT US', href: '/contact' },
   ]
 
   return (
@@ -36,8 +37,8 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
         {/* Logo zone */}
-        <div className="flex items-center gap-3">
-          <div className="w-[52px] h-[52px] rounded-full border border-light-charcoal bg-light-mid flex items-center justify-center dark:border-dark-border dark:bg-dark-card">
+        <Link href="/" className="flex items-center gap-3 group">
+          <div className="w-[52px] h-[52px] rounded-full border border-light-charcoal bg-light-mid flex items-center justify-center dark:border-dark-border dark:bg-dark-card group-hover:border-gold transition-colors duration-300">
             <Image
               src="/logo-white.svg"
               alt="Amazing Grace Ministries Logo"
@@ -56,21 +57,21 @@ export default function Navbar() {
             />
           </div>
           <div>
-            <h1 className="font-display font-bold text-[17px] leading-tight text-light-charcoal dark:text-white">
+            <h1 className="font-display font-bold text-[17px] leading-tight text-light-charcoal dark:text-white group-hover:text-gold transition-colors duration-300">
               Amazing Grace
             </h1>
             <p className="font-body font-medium text-[11px] tracking-[0.14em] uppercase text-light-secondary dark:text-dark-muted">
               Ministries MN
             </p>
           </div>
-        </div>
+        </Link>
 
         {/* Desktop navigation */}
         <div className="hidden lg:flex items-center gap-8">
           <ul className="flex items-center gap-6">
             {navLinks.map((link) => (
               <li key={link.label}>
-                <a
+                <Link
                   href={link.href}
                   className="
                     font-body font-semibold text-[13px] uppercase tracking-[0.08em] relative group
@@ -80,15 +81,15 @@ export default function Navbar() {
                   "
                 >
                   {link.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
 
           <div className="flex items-center gap-5">
             <ThemeToggle />
-            <a
-              href="#visit"
+            <Link
+              href="/plan-your-visit"
               className="
                 bg-light-charcoal text-white hover:bg-dark-section
                 dark:bg-white dark:text-dark-charcoal dark:hover:bg-light-gray
@@ -96,7 +97,7 @@ export default function Navbar() {
               "
             >
               JOIN US SUNDAY
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -119,7 +120,7 @@ export default function Navbar() {
           <ul className="flex flex-col gap-4 mb-6">
             {navLinks.map((link) => (
               <li key={link.label}>
-                <a
+                <Link
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
                   className="
@@ -128,13 +129,13 @@ export default function Navbar() {
                     dark:text-white dark:hover:text-gold
                   "
                 >
-                  {link.label}
-                </a>
+                  {navLinks.find(nl => nl.href === link.href)?.label || link.label}
+                </Link>
               </li>
             ))}
           </ul>
-          <a
-            href="https://www.youtube.com/@amazinggracemn"
+          <Link
+            href="/plan-your-visit"
             onClick={() => setMenuOpen(false)}
             className="
               w-full text-center bg-light-charcoal text-white hover:bg-dark-section
@@ -143,7 +144,7 @@ export default function Navbar() {
             "
           >
             JOIN US SUNDAY
-          </a>
+          </Link>
         </div>
       )}
     </nav>

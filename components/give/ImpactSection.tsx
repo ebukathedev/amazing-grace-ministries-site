@@ -1,4 +1,5 @@
 import { Users, Globe, BookOpen, Heart } from 'lucide-react'
+import Image from 'next/image'
 
 export default function ImpactSection() {
   const areas = [
@@ -41,13 +42,13 @@ export default function ImpactSection() {
             <div className="w-full h-full bg-gradient-to-br from-dark-elevated via-dark-section to-dark-black" />
 
             {/* Production Image:
+            */}
             <Image
-              src="/images/give/impact.jpg"
+              src="/images/img4.jpg"
               alt="Community impact illustration image"
               fill
               className="object-cover"
             />
-            */}
           </div>
 
           {/* Floating stat card (hidden on mobile, shown on sm+) */}

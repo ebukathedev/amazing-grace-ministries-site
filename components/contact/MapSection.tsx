@@ -37,29 +37,17 @@ export default function MapSection() {
           {/* Placeholder bg */}
           <div className="absolute inset-0 bg-light-mid dark:bg-dark-card transition-colors duration-300" />
           
-          {/* Center placeholder content */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 z-10 pointer-events-none">
-            <MapPin className="w-14 h-14 text-gold" />
-            <span className="font-body font-semibold text-[13px] uppercase tracking-widest text-light-secondary dark:text-white/50 block">
-              Interactive Map
-            </span>
-            <span className="font-body text-[12px] text-light-muted dark:text-white/30 block">
-              Replace with Google Maps embed
-            </span>
-          </div>
-
-          {/* Google Maps embed code comment
+          {/* Active Google Map Embed */}
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2825.860161405021!2d-93.07897042375539!3d44.96677947107009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32ad8d39c5957%3A0xe54e3d368e7d808e!2s715%20Edgerton%20St%2C%20St%20Paul%2C%20MN%2055130!5e0!3m2!1sen!2sus!4v1720880000000!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.7107222090467!2d-93.0790403344524!3d44.96266734038071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b2d535db58a159%3A0x30db70624ab5b834!2sAmazing%20Grace%20MN!5e1!3m2!1sen!2sng!4v1784043618752!5m2!1sen!2sng"
             width="100%"
             height="100%"
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            referrerPolicy="strict-origin-when-cross-origin"
             className="absolute inset-0 w-full h-full"
           />
-          */}
         </div>
       </div>
 
@@ -76,32 +64,6 @@ export default function MapSection() {
         >
           <Navigation className="w-[14px] h-[14px]" />
           Get Directions
-        </a>
-        <a
-          href={`https://maps.google.com/?q=${addressQuery}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="
-            flex items-center gap-2 font-body font-semibold text-[13px] uppercase tracking-wide px-6 py-3 rounded-lg border transition-all cursor-pointer
-            bg-light-white border-light-mid text-light-charcoal hover:border-gold hover:text-gold
-            dark:bg-dark-card dark:border-dark-border dark:text-white dark:hover:border-gold dark:hover:text-gold
-          "
-        >
-          <ExternalLink className="w-[14px] h-[14px]" />
-          Open in Google Maps
-        </a>
-        <a
-          href={`https://maps.apple.com/?q=${addressQuery}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="
-            flex items-center gap-2 font-body font-semibold text-[13px] uppercase tracking-wide px-6 py-3 rounded-lg border transition-all cursor-pointer
-            bg-light-white border-light-mid text-light-charcoal hover:border-gold hover:text-gold
-            dark:bg-dark-card dark:border-dark-border dark:text-white dark:hover:border-gold dark:hover:text-gold
-          "
-        >
-          <MapPin className="w-[14px] h-[14px]" />
-          Open in Apple Maps
         </a>
       </div>
 

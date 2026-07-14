@@ -5,8 +5,6 @@ export default function ConnectStrip() {
     { icon: Facebook, label: 'Facebook', href: 'https://facebook.com/amazinggracemn' },
     { icon: Instagram, label: 'Instagram', href: 'https://instagram.com/amazinggracemn' },
     { icon: Youtube, label: 'YouTube', href: 'https://youtube.com/@amazinggracemn' },
-    { icon: Music2, label: 'TikTok', href: 'https://tiktok.com/@amazinggracemn' },
-    { icon: Twitter, label: 'Twitter / X', href: 'https://twitter.com/amazinggracemn' },
   ]
 
   return (

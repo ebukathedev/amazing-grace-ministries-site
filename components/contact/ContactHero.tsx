@@ -1,4 +1,5 @@
 import { ChevronDown, MessageCircle } from 'lucide-react'
+import Image from 'next/image'
 
 export default function ContactHero() {
   return (
@@ -14,14 +15,14 @@ export default function ContactHero() {
         <div className="w-full h-full bg-gradient-to-br from-dark-elevated via-dark-section to-dark-black opacity-60" />
         
         {/* Production Image:
+        */}
         <Image
-          src="/images/contact/hero.jpg"
+          src="/images/img3.jpg"
           alt="Contact Us Hero Image"
           fill
           priority
           className="object-cover opacity-35"
         />
-        */}
       </div>
 
       {/* Dark overlay */}
@@ -55,14 +56,6 @@ export default function ContactHero() {
         <p className="font-display italic text-[20px] text-white/60">
           &ldquo;No question is too small. No need is too great.&rdquo;
         </p>
-
-        {/* Response time note */}
-        <div className="inline-flex items-center gap-2 mt-6">
-          <MessageCircle className="w-4 h-4 text-gold" />
-          <span className="font-body font-semibold text-[12px] uppercase tracking-widest text-white/50">
-            We typically respond within 24–48 hours
-          </span>
-        </div>
       </div>
 
       {/* Scroll indicator */}

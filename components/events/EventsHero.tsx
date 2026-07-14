@@ -1,4 +1,5 @@
 import { ChevronDown, CalendarDays } from 'lucide-react'
+import Image from 'next/image'
 
 export default function EventsHero() {
   return (
@@ -14,14 +15,14 @@ export default function EventsHero() {
         <div className="w-full h-full bg-gradient-to-br from-dark-elevated via-dark-section to-dark-black opacity-60" />
         
         {/* Production Image:
+        */}
         <Image
-          src="/images/events/hero.jpg"
+          src="/images/img1.jpg"
           alt="Events Hero Image"
           fill
           priority
           className="object-cover opacity-35"
         />
-        */}
       </div>
 
       {/* Dark overlay */}

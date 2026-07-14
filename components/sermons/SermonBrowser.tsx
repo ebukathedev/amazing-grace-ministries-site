@@ -7,7 +7,7 @@ const sermons = [
     id: 1,
     title: 'The Promise Is Still Yes',
     series: 'Living in the Promise',
-    pastor: 'Pastor David',
+    pastor: 'Pastor Nnaemeka Uchegbu',
     date: 'May 12, 2025',
     duration: '42 min',
     scripture: 'Numbers 23:19',
@@ -18,7 +18,7 @@ const sermons = [
     id: 2,
     title: 'Walking by Faith, Not by Sight',
     series: 'Living in the Promise',
-    pastor: 'Pastor David',
+    pastor: 'Pastor Nnaemeka Uchegbu',
     date: 'May 5, 2025',
     duration: '38 min',
     scripture: '2 Corinthians 5:7',
@@ -29,7 +29,7 @@ const sermons = [
     id: 3,
     title: 'God\'s Timing Is Perfect',
     series: 'Living in the Promise',
-    pastor: 'Pastor Sarah',
+    pastor: 'Pastor Nnaemeka Uchegbu',
     date: 'Apr 28, 2025',
     duration: '45 min',
     scripture: 'Ecclesiastes 3:11',
@@ -40,7 +40,7 @@ const sermons = [
     id: 4,
     title: 'Deep Roots, Strong Fruit',
     series: 'Rooted',
-    pastor: 'Pastor David',
+    pastor: 'Pastor Nnaemeka Uchegbu',
     date: 'Mar 16, 2025',
     duration: '40 min',
     scripture: 'Psalm 1:1-3',
@@ -51,7 +51,7 @@ const sermons = [
     id: 5,
     title: 'The Word That Does Not Return Void',
     series: 'Rooted',
-    pastor: 'Pastor Sarah',
+    pastor: 'Pastor Nnaemeka Uchegbu',
     date: 'Mar 9, 2025',
     duration: '36 min',
     scripture: 'Isaiah 55:11',
@@ -62,7 +62,7 @@ const sermons = [
     id: 6,
     title: 'More Grace',
     series: 'Grace Upon Grace',
-    pastor: 'Pastor David',
+    pastor: 'Pastor Nnaemeka Uchegbu',
     date: 'Jan 26, 2025',
     duration: '44 min',
     scripture: 'James 4:6',
@@ -90,12 +90,9 @@ export default function SermonBrowser() {
   return (
     <section
       id="browser"
-      className="
-        py-16 px-6
-        bg-light-gray dark:bg-dark-charcoal
-        transition-colors duration-300
-      "
+      className="py-16 md:py-24 px-5 md:px-6 bg-light-gray dark:bg-dark-charcoal transition-colors duration-300"
     >
+      {/* ===== SERMON BROWSER ===== */}
       <div className="max-w-6xl mx-auto">
         
         {/* ===== FILTER SECTION ===== */}

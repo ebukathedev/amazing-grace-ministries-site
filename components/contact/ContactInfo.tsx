@@ -15,28 +15,13 @@ export default function ContactInfo() {
     {
       icon: Phone,
       label: 'PHONE',
-      val: <p>(651) 555-0199</p>,
+      val: <p>(651) 274-9224</p>,
     },
     {
       icon: Mail,
       label: 'EMAIL',
       val: <p>info@amazinggracemn.org</p>,
-    },
-    {
-      icon: Clock,
-      label: 'OFFICE HOURS',
-      val: (
-        <>
-          <p>Mon &ndash; Fri</p>
-          <p>9:00 AM &ndash; 5:00 PM</p>
-        </>
-      ),
-    },
-    {
-      icon: Globe,
-      label: 'WEBSITE',
-      val: <p>www.amazinggracemn.org</p>,
-    },
+    }, 
   ]
 
   return (
@@ -58,7 +43,7 @@ export default function ContactInfo() {
       </div>
 
       {/* ===== INFO GRID ===== */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
         {cards.map((card, idx) => {
           const IconComponent = card.icon
           return (

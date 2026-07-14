@@ -1,4 +1,5 @@
 import { ChevronDown, Heart } from 'lucide-react'
+import Image from 'next/image'
 
 export default function GiveHero() {
   return (
@@ -14,14 +15,14 @@ export default function GiveHero() {
         <div className="w-full h-full bg-gradient-to-br from-dark-elevated via-dark-section to-dark-black opacity-60" />
         
         {/* Production Image:
+        */}
         <Image
-          src="/images/give/hero.jpg"
+          src="/images/img4.jpg"
           alt="Generosity and Giving Hero Image"
           fill
           priority
           className="object-cover opacity-35"
         />
-        */}
       </div>
 
       {/* Dark overlay */}

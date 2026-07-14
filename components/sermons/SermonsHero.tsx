@@ -1,27 +1,26 @@
 import { ChevronDown, Play } from 'lucide-react'
+import Image from 'next/image'
 
 export default function SermonsHero() {
   return (
     <section
-      className="
-        relative min-h-[60vh] flex flex-col items-center justify-center overflow-hidden
-        bg-light-charcoal dark:bg-dark-black
-      "
+      className="relative min-h-[60vh] flex flex-col items-center justify-center overflow-hidden bg-light-charcoal dark:bg-dark-black"
     >
+      {/* ===== SERMONS HERO ===== */}
       {/* Background image layer */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Placeholder: Gradient background */}
         <div className="w-full h-full bg-gradient-to-br from-dark-elevated via-dark-section to-dark-black opacity-60" />
         
         {/* Production Image:
+        */}
         <Image
-          src="/images/sermons/hero.jpg"
+          src="/images/img5.jpg"
           alt="Sermons Library Hero Image"
           fill
           priority
           className="object-cover opacity-35"
         />
-        */}
       </div>
 
       {/* Dark overlay */}
@@ -29,17 +28,13 @@ export default function SermonsHero() {
 
       {/* Left side diagonal vector border */}
       <div
-        className="
-          absolute left-0 top-0 bottom-0 w-[60px] bg-white/[0.03] pointer-events-none z-[2]
-        "
+        className="absolute left-0 top-0 bottom-0 w-[60px] bg-white/[0.03] pointer-events-none z-[2]"
         style={{ clipPath: 'polygon(0 0, 100% 5%, 100% 95%, 0 100%)' }}
       />
 
       {/* Right side diagonal vector border */}
       <div
-        className="
-          absolute right-0 top-0 bottom-0 w-[60px] bg-white/[0.03] pointer-events-none z-[2]
-        "
+        className="absolute right-0 top-0 bottom-0 w-[60px] bg-white/[0.03] pointer-events-none z-[2]"
         style={{ clipPath: 'polygon(100% 0, 0 5%, 0 95%, 100% 100%)' }}
       />
 
@@ -60,10 +55,7 @@ export default function SermonsHero() {
         <div className="mt-8">
           <a
             href="#latest"
-            className="
-              inline-flex items-center gap-3 bg-gold text-dark-charcoal font-body font-bold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-sm
-              hover:bg-gold-light hover:-translate-y-0.5 transition-all shadow-gold
-            "
+            className="inline-flex items-center gap-3 bg-gold text-dark-charcoal font-body font-bold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-sm hover:bg-gold-light hover:-translate-y-0.5 transition-all shadow-gold"
           >
             <Play className="w-4 h-4 text-dark-charcoal fill-dark-charcoal" />
             Watch Latest Sermon
@@ -81,3 +73,4 @@ export default function SermonsHero() {
     </section>
   )
 }
+

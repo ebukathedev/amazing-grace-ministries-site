@@ -4,13 +4,10 @@ export default function FeaturedSermon() {
   return (
     <section
       id="latest"
-      className="
-        py-24 px-6
-        bg-light-gray dark:bg-dark-charcoal
-        transition-colors duration-300
-      "
+      className="py-16 md:py-24 px-5 md:px-6 bg-light-gray dark:bg-dark-charcoal transition-colors duration-300"
     >
-      {/* ===== HEADER ===== */}
+      {/* ===== FEATURED SERMON ===== */}
+      {/* Header */}
       <div className="max-w-6xl mx-auto mb-10 reveal">
         <span className="font-body font-semibold text-[11px] uppercase tracking-[0.18em] text-gold">
           THIS WEEK&apos;S MESSAGE
@@ -93,7 +90,7 @@ export default function FeaturedSermon() {
               text-light-secondary dark:text-white/60
             "
           >
-            God&apos;s promises are not subject to circumstances, seasons, or setbacks. In this powerful message, Pastor David walks us through why the promise over your life remains yes and amen &mdash; no matter what you&apos;re facing.
+            God&apos;s promises are not subject to circumstances, seasons, or setbacks. In this powerful message, Pastor Nnaemeka Uchegbu walks us through why the promise over your life remains yes and amen &mdash; no matter what you&apos;re facing.
           </p>
 
           {/* Meta row */}

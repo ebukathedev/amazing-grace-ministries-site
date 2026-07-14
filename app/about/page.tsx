@@ -10,12 +10,12 @@ import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata = {
   title: 'About Us | Amazing Grace Ministries MN',
-  description: 'Learn who we are, what we believe, and what drives us at Amazing Grace Ministries MN.',
+  description: 'We are the Amazing Family — a non-denominational, Spirit-filled community led by Pastor Nnaemeka Uchegbu, dedicated to spreading hope, love, and the teachings of Christ.',
 }
 
 export default function AboutPage() {
   return (
-    <main className="flex flex-col min-h-screen bg-light-white dark:bg-dark-charcoal font-body antialiased transition-colors duration-300">
+    <main>
       <Navbar />
       <AboutHero />
       <OurStory />
@@ -28,3 +28,4 @@ export default function AboutPage() {
     </main>
   )
 }
+

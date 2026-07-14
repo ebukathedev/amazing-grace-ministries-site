@@ -22,42 +22,29 @@ export default function OurBeliefs() {
     },
     {
       title: 'ETERNITY',
-      body: 'We believe in the resurrection of the dead and the reality of eternal life — heaven for the redeemed and judgment for the unrepentant.',
+      body: 'We believe in the resurrection of the dead and the reality of eternal life — heaven for the redeemed, judgment for the unrepentant.',
     },
   ]
 
   return (
     <section
-      className="
-        py-24 px-6
-        bg-light-gray dark:bg-dark-charcoal
-        transition-colors duration-300
-      "
+      className="py-16 md:py-24 px-5 md:px-6 bg-light-gray dark:bg-dark-charcoal transition-colors duration-300"
     >
-      {/* ===== HEADER ===== */}
+      {/* ===== OUR BELIEFS ===== */}
+      {/* Header */}
       <div className="text-center mb-16 reveal">
         <span className="font-body font-semibold text-[11px] uppercase tracking-[0.18em] text-gold">
           WHAT WE STAND ON
         </span>
-        <h2
-          className="
-            font-display font-bold text-[44px] md:text-[52px] mt-2
-            text-light-charcoal dark:text-white
-          "
-        >
+        <h2 className="font-display font-bold text-[44px] md:text-[52px] mt-2 text-light-charcoal dark:text-white">
           What We Believe
         </h2>
-        <p
-          className="
-            font-body text-[16px] max-w-xl mx-auto mt-4
-            text-light-secondary dark:text-white/60
-          "
-        >
-          Our beliefs are rooted in the timeless truth of Scripture. These are the convictions that anchor everything we do.
+        <p className="font-body text-[16px] max-w-xl mx-auto mt-4 text-light-secondary dark:text-white/60">
+          Our beliefs are rooted in the timeless truth of Scripture — the convictions that anchor everything we do as a community.
         </p>
       </div>
 
-      {/* ===== BELIEF GRID ===== */}
+      {/* Belief Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-6xl mx-auto">
         {beliefs.map((belief, idx) => (
           <div
@@ -70,20 +57,10 @@ export default function OurBeliefs() {
             `}
           >
             <div className="w-8 h-[3px] bg-gold mb-5" />
-            <h3
-              className="
-                font-body font-bold text-[16px] uppercase tracking-wide
-                text-light-charcoal dark:text-white
-              "
-            >
+            <h3 className="font-body font-bold text-[16px] uppercase tracking-wide text-light-charcoal dark:text-white">
               {belief.title}
             </h3>
-            <p
-              className="
-                font-body text-[14px] leading-relaxed mt-3
-                text-light-secondary dark:text-white/60
-              "
-            >
+            <p className="font-body text-[14px] leading-relaxed mt-3 text-light-secondary dark:text-white/60">
               {belief.body}
             </p>
           </div>
@@ -92,3 +69,4 @@ export default function OurBeliefs() {
     </section>
   )
 }
+

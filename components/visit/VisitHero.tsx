@@ -1,27 +1,26 @@
+import Image from 'next/image'
 import { ChevronDown } from 'lucide-react'
 
 export default function VisitHero() {
   return (
     <section
-      className="
-        relative min-h-[60vh] flex flex-col items-center justify-center overflow-hidden
-        bg-light-charcoal dark:bg-dark-black
-      "
+      className="relative min-h-[60vh] flex flex-col items-center justify-center overflow-hidden bg-light-charcoal dark:bg-dark-black"
     >
+      {/* ===== VISIT HERO ===== */}
       {/* Background image layer */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         {/* Placeholder: Gradient background */}
         <div className="w-full h-full bg-gradient-to-br from-dark-elevated via-dark-section to-dark-black opacity-60" />
         
         {/* Production Image:
+        */}
         <Image
-          src="/images/visit/hero.jpg"
+          src="/images/img4.jpg"
           alt="Plan Your Visit Hero Image"
           fill
           priority
           className="object-cover opacity-40"
         />
-        */}
       </div>
 
       {/* Dark overlay */}
@@ -29,17 +28,13 @@ export default function VisitHero() {
 
       {/* Left side diagonal vector border */}
       <div
-        className="
-          absolute left-0 top-0 bottom-0 w-[60px] bg-white/[0.03] pointer-events-none z-[2]
-        "
+        className="absolute left-0 top-0 bottom-0 w-[60px] bg-white/[0.03] pointer-events-none z-[2]"
         style={{ clipPath: 'polygon(0 0, 100% 5%, 100% 95%, 0 100%)' }}
       />
 
       {/* Right side diagonal vector border */}
       <div
-        className="
-          absolute right-0 top-0 bottom-0 w-[60px] bg-white/[0.03] pointer-events-none z-[2]
-        "
+        className="absolute right-0 top-0 bottom-0 w-[60px] bg-white/[0.03] pointer-events-none z-[2]"
         style={{ clipPath: 'polygon(100% 0, 0 5%, 0 95%, 100% 100%)' }}
       />
 
@@ -67,3 +62,4 @@ export default function VisitHero() {
     </section>
   )
 }
+

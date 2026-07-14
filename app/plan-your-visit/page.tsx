@@ -10,12 +10,12 @@ import ScrollReveal from '@/components/ScrollReveal'
 
 export const metadata = {
   title: 'Plan Your Visit | Amazing Grace Ministries MN',
-  description: 'Everything you need to know before your first visit to Amazing Grace Ministries MN — service times, location, parking, and what to expect.',
+  description: 'Everything you need to know before your first visit — service times, location, what to expect, and how to join us online.',
 }
 
 export default function PlanYourVisitPage() {
   return (
-    <main className="flex flex-col min-h-screen bg-light-white dark:bg-dark-charcoal font-body antialiased transition-colors duration-300">
+    <main>
       <Navbar />
       <VisitHero />
       <ServiceTimes />
@@ -28,3 +28,4 @@ export default function PlanYourVisitPage() {
     </main>
   )
 }
+

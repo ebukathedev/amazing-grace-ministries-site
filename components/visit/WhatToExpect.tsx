@@ -1,4 +1,4 @@
-import { Music, BookOpen, Heart, Baby, Coffee, Clock } from 'lucide-react'
+import { Music, BookOpen, Heart, Baby, Coffee, Clock, Phone } from 'lucide-react'
 
 export default function WhatToExpect() {
   const steps = [
@@ -12,13 +12,13 @@ export default function WhatToExpect() {
       icon: Music,
       label: 'WORSHIP',
       title: 'Spirit-Filled Worship',
-      body: "We open with engaging, contemporary worship music. Feel free to stand, sing along, or simply take it all in &mdash; there's no pressure.",
+      body: "We open with engaging, Spirit-filled worship. Feel free to stand, sing along, or simply take it all in — there's no pressure.",
     },
     {
       icon: BookOpen,
       label: 'THE MESSAGE',
-      title: 'Practical Bible Teaching',
-      body: 'Our pastor delivers a relevant, scripture-based message designed to speak to real life. Messages typically run 35–45 minutes.',
+      title: 'Powerful Bible Teaching',
+      body: 'Pastor Nnaemeka Uchegbu delivers a relevant, scripture-based message designed to speak to real life. Messages typically run 35–45 minutes.',
     },
     {
       icon: Baby,
@@ -30,25 +30,22 @@ export default function WhatToExpect() {
       icon: Heart,
       label: 'COMMUNITY',
       title: 'Connect After Service',
-      body: 'Stay after the service for refreshments and conversation. Our team will be available to meet you, answer questions, and help you find your next step.',
+      body: 'Stay after the service for refreshments and conversation. Our team will be available to meet you and help you find your next step in the Amazing Family.',
     },
     {
       icon: Coffee,
       label: 'ATMOSPHERE',
       title: 'Casual & Welcoming',
-      body: "Come as you are &mdash; seriously. Jeans, t-shirts, whatever you're comfortable in. We're a come-as-you-are community and mean it.",
+      body: "Come as you are — seriously. Jeans, t-shirts, whatever you're comfortable in. We are a come-as-you-are, non-denominational community.",
     },
   ]
 
   return (
     <section
-      className="
-        py-24 px-6 md:px-8
-        bg-light-charcoal dark:bg-dark-section
-        transition-colors duration-300
-      "
+      className="py-16 md:py-24 px-5 md:px-6 bg-light-charcoal dark:bg-dark-section transition-colors duration-300"
     >
-      {/* ===== HEADER ===== */}
+      {/* ===== WHAT TO EXPECT ===== */}
+      {/* Header */}
       <div className="text-center mb-16 reveal">
         <span className="font-body font-semibold text-[11px] uppercase tracking-[0.18em] text-gold">
           FIRST TIME?
@@ -61,26 +58,21 @@ export default function WhatToExpect() {
         </p>
       </div>
 
-      {/* ===== TIMELINE ===== */}
+      {/* Timeline */}
       <div className="max-w-3xl mx-auto mt-14 relative">
-        {/* Vertical line (hidden on mobile) */}
-        <div className="absolute left-[27px] top-4 bottom-4 w-px bg-dark-border hidden sm:block pointer-events-none" />
+        {/* Vertical line (hidden on mobile/tablet <= 768px) */}
+        <div className="absolute left-[27px] top-4 bottom-4 w-px bg-dark-border hidden md:block pointer-events-none" />
 
         {steps.map((step, idx) => {
           const IconComponent = step.icon
           return (
             <div
               key={idx}
-              className="
-                flex flex-col sm:flex-row gap-4 sm:gap-6 mb-10 last:mb-0 reveal
-              "
+              className="flex flex-col md:flex-row gap-4 md:gap-6 mb-10 last:mb-0 reveal"
             >
               {/* Icon circle */}
               <div
-                className="
-                  w-14 h-14 rounded-full border border-dark-border bg-dark-card
-                  flex items-center justify-center flex-shrink-0 z-10 text-gold
-                "
+                className="w-14 h-14 rounded-full border border-dark-border bg-dark-card flex items-center justify-center flex-shrink-0 z-10 text-gold"
               >
                 <IconComponent className="w-6 h-6" />
               </div>
@@ -93,10 +85,9 @@ export default function WhatToExpect() {
                 <h3 className="font-body font-bold text-[18px] text-white">
                   {step.title}
                 </h3>
-                <p
-                  className="font-body text-[14px] text-white/60 leading-relaxed mt-2"
-                  dangerouslySetInnerHTML={{ __html: step.body }}
-                />
+                <p className="font-body text-[14px] text-white/60 leading-relaxed mt-2">
+                  {step.body}
+                </p>
               </div>
             </div>
           )

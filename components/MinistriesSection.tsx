@@ -4,39 +4,27 @@ export default function MinistriesSection() {
   const ministries = [
     {
       name: "Children's Ministry",
-      category: 'KIDS',
+      category: 'FOR FAMILIES',
       gradient: 'from-dark-muted to-dark-black',
-      span: 'col-span-1 md:col-span-2 h-44',
+      span: 'col-span-2 h-44',
     },
     {
-      name: 'Youth',
-      category: 'NEXT GEN',
+      name: 'Bible Study',
+      category: 'MONDAY NIGHTS',
       gradient: 'from-dark-elevated to-dark-black',
-      span: 'col-span-1 h-44 md:h-56',
-    },
-    {
-      name: "Women's Ministry",
-      category: 'WOMEN',
-      gradient: 'from-[#2a2a1a] to-dark-black',
-      span: 'col-span-1 h-44 md:h-56',
-    },
-    {
-      name: "Men's Ministry",
-      category: 'MEN',
-      gradient: 'from-[#1a1a2a] to-dark-black',
-      span: 'col-span-1 h-44 md:h-56',
+      span: 'col-span-1 h-56',
     },
     {
       name: 'Prayer & Intercession',
-      category: 'PRAYER',
-      gradient: 'from-[#1a2a1a] to-dark-black',
-      span: 'col-span-1 h-44 md:h-56',
+      category: 'OPEN HEAVENS',
+      gradient: 'from-[#2a1a1a] to-dark-black',
+      span: 'col-span-1 h-56',
     },
     {
       name: 'Outreach',
-      category: 'OUTREACH',
-      gradient: 'from-dark-section to-dark-black',
-      span: 'col-span-1 md:col-span-2 h-44',
+      category: 'FOR THE CITY',
+      gradient: 'from-[#1a2a1a] to-dark-black',
+      span: 'col-span-2 h-44',
     },
   ]
 
@@ -81,7 +69,7 @@ export default function MinistriesSection() {
               text-light-secondary dark:text-white/60
             "
           >
-            At Amazing Grace Ministries, our ministries serve as bridges to help people connect, grow, and release their potential in Christ. From our kids to our community outreach, discover how you can grow and make an impact in every stage of life.
+            From Bible study and prayer to outreach and community care, our ministries create space for growth, service, and lasting connection. Wherever you are on your journey, there&apos;s a place for you.
           </p>
         </div>
 

@@ -81,6 +81,8 @@ export default function Hero() {
         >
           <a
             href="https://www.youtube.com/@amazinggracemn"
+            target="_blank"
+            rel="noopener noreferrer"
             className="
               font-body font-bold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-sm hover:-translate-y-0.5 transition-all flex items-center gap-2
               bg-light-charcoal text-white hover:bg-dark-section
@@ -92,9 +94,9 @@ export default function Hero() {
           </a>
 
           <a
-            href="#visit"
+            href="/plan-your-visit"
             className="
-              font-body font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-sm transition-all flex items-center gap-2
+              font-body font-semibold text-[13px] uppercase tracking-[0.1em] px-8 py-4 rounded-sm hover:-translate-y-0.5 transition-all flex items-center gap-2
               border border-light-charcoal text-light-charcoal hover:bg-light-mid
               dark:border-white dark:text-white dark:hover:bg-white/10
             "
@@ -173,7 +175,7 @@ export default function Hero() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-between gap-3 mt-3">
               <a
-                href="#sermons"
+                href="/sermons"
                 className="
                   font-body font-semibold text-[13px] text-gold hover:text-gold-dark flex items-center gap-1
                 "

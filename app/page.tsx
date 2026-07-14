@@ -7,6 +7,7 @@ import MinistriesSection from "@/components/MinistriesSection";
 import MissionSection from "@/components/MissionSection";
 import Navbar from "@/components/Navbar";
 import NextSteps from "@/components/NextSteps";
+import OurPrograms from "@/components/OurPrograms";
 import PlanYourVisit from "@/components/PlanYourVisit";
 import ScrollReveal from "@/components/ScrollReveal";
 import SermonSection from "@/components/SermonSection";
@@ -18,6 +19,7 @@ export default function Home() {
         <AnnouncementBar />
         <Hero />
         <AboutSection />
+        <OurPrograms />
         <PlanYourVisit />
         <MissionSection />
         <NextSteps />

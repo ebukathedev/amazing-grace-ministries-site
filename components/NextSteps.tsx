@@ -7,28 +7,28 @@ export default function NextSteps() {
       title: 'SALVATION',
       description: 'Begin your journey with Christ and experience the power of a transformed life.',
       linkText: 'Get Started',
-      href: '#salvation',
+      href: '/contact',
     },
     {
       icon: Users,
       title: 'MEMBERSHIP',
       description: 'Make Amazing Grace your spiritual home and grow in faith with a community that cares.',
       linkText: 'Learn More',
-      href: '#membership',
+      href: '/about',
     },
     {
       icon: Handshake,
       title: 'VOLUNTEER',
       description: 'Use your gifts to serve others and be part of something bigger than yourself.',
       linkText: 'Get Involved',
-      href: '#volunteer',
+      href: '/contact',
     },
     {
       icon: UsersRound,
       title: 'COMMUNITY GROUPS',
       description: 'Build authentic relationships that encourage spiritual growth and real connection.',
       linkText: 'Find a Group',
-      href: '#groups',
+      href: '/events',
     },
   ]
 
@@ -58,10 +58,6 @@ export default function NextSteps() {
 
         <p className="font-body text-[15px] sm:text-[16px] text-white/65 max-w-2xl mx-auto text-center mt-4">
           Faith grows best in community. Whether you&apos;re new or ready to take your next step, there&apos;s a place for you to connect, grow, and belong.
-        </p>
-
-        <p className="font-body font-semibold text-[13px] sm:text-[14px] text-white/50 text-center mt-2">
-          Next Steps: Each one draws you closer to purpose.
         </p>
 
         {/* 4-Column Card Grid */}
@@ -106,7 +102,7 @@ export default function NextSteps() {
         {/* Bottom Ghost CTA */}
         <div className="text-center mt-14">
           <a
-            href="#visit"
+            href="/plan-your-visit"
             className="
               inline-flex items-center gap-2 border border-white/25 text-white font-body font-semibold text-[13px] uppercase tracking-[0.08em] px-10 py-4 rounded-sm hover:border-gold hover:text-gold transition-all
               dark:border-dark-border

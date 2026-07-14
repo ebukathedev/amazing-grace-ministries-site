@@ -29,14 +29,17 @@ export default function AboutSection() {
 
         <div className="font-body text-[16px] sm:text-[17px] leading-[1.85] text-center max-w-2xl mx-auto mt-10 space-y-6">
           <p className="text-white/75 dark:text-white/70">
-            At <strong className="text-white font-semibold">Amazing Grace Ministries MN</strong>, we exist to help people encounter God&apos;s presence, discover their purpose, and grow together in authentic community.
+            Welcome to <strong className="text-white font-semibold">Amazing Grace Ministries</strong>! We are delighted to have you join our vibrant and loving community, led by our charismatic Senior Pastor, <strong className="text-white font-semibold">Nnaemeka Uchegbu</strong>.
           </p>
           <p className="text-white/75 dark:text-white/70">
-            Led by <strong className="text-white font-semibold">Pastor David and Pastor Sarah</strong>, we are a Spirit-filled, multigenerational family &mdash; rooted in the Word and committed to loving our city and the world.
+            At Amazing Grace, we are committed to spreading hope, love, and the teachings of Christ. We provide a warm and nurturing environment where you can grow spiritually through engaging sermons, interactive Bible studies, and meaningful fellowship.
+          </p>
+          <p className="text-white/75 dark:text-white/70">
+            Our diverse, non-denominational community is dedicated to supporting one another on the journey of faith, offering various opportunities for personal development and spiritual renewal.
           </p>
         </div>
 
-        <p className="font-display italic text-[21px] text-gold mt-10">
+        <p className="font-display italic text-[21px] text-gold mt-8">
           &ldquo;You belong here.&rdquo;
         </p>
       </div>

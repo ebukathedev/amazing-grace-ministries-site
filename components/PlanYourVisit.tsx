@@ -24,6 +24,7 @@ export default function PlanYourVisit() {
               <div className="w-full h-px bg-white/15 dark:bg-dark-border my-3" />
               <div className="font-body text-white/75 dark:text-white/65 text-[15px] leading-loose">
                 <p>Sundays: 10:00 AM</p>
+                <p>Mondays: 7:00 PM</p>
                 <p>Wednesdays: 7:00 PM</p>
               </div>
             </div>

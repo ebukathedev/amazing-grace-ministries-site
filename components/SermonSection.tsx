@@ -55,10 +55,10 @@ export default function SermonSection() {
               LATEST MESSAGE
             </span>
             <h3 className="font-body font-bold text-[20px] text-white mt-1 leading-snug">
-              &ldquo;Living in the Promise&rdquo;
+              &ldquo;The Promise Is Still Yes&rdquo;
             </h3>
             <p className="font-body text-[13px] text-white/55 mt-1">
-              Pastor David &middot; May 12, 2025
+              Pastor Nnaemeka Uchegbu &middot; May 12, 2025
             </p>
 
             {/* Play Button Icon */}
@@ -95,7 +95,7 @@ export default function SermonSection() {
           {/* CTAs */}
           <div className="flex flex-wrap gap-4 mt-8">
             <a
-              href="#watch-latest"
+              href="/sermons"
               className="
                 bg-gold text-dark-charcoal font-body font-bold text-[13px] uppercase tracking-[0.08em] px-7 py-3.5 rounded-sm hover:-translate-y-0.5 hover:shadow-gold-glow transition-all flex items-center gap-2
               "
@@ -104,7 +104,7 @@ export default function SermonSection() {
               Watch Latest
             </a>
             <a
-              href="#explore"
+              href="/sermons"
               className="
                 border border-white/25 text-white font-body font-semibold text-[13px] uppercase tracking-[0.08em] px-7 py-3.5 rounded-sm hover:border-gold hover:text-gold transition-all flex items-center gap-2
               "

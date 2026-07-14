@@ -5,7 +5,7 @@ export default function EventsSection() {
     {
       date: { month: 'APR', day: '26' },
       category: 'COMMUNITY',
-      title: 'COMMUNITY GROUPS',
+      title: 'Community Groups',
       description: 'Build authentic faith friendships in our weekly small groups.',
       time: 'April 26 – June 6',
       location: 'Online & In Person',
@@ -14,18 +14,18 @@ export default function EventsSection() {
     {
       date: { month: 'MAY', day: '08' },
       category: 'SPECIAL',
-      title: 'YOUTH NIGHT',
-      description: 'An electric evening for young people to encounter God.',
-      time: '6:00 PM | Friday',
-      location: 'Main Auditorium',
+      title: 'Open Heavens',
+      description: 'Start the month with a supercharge of prayer. Set your mind in tune with God.',
+      time: '1st Saturday of Month',
+      location: 'Main Sanctuary',
       gradient: 'from-dark-muted to-dark-black',
     },
     {
       date: { month: 'MAY', day: '10' },
       category: 'WORSHIP',
-      title: 'SUNDAY CELEBRATION',
-      description: 'Join our weekly family gathering — all are welcome.',
-      time: '10:00 AM | Sunday',
+      title: 'Sunday Celebration',
+      description: 'Join our weekly family gathering — all are welcome. In person and online.',
+      time: '10:00 AM Sunday',
       location: 'Sanctuary',
       gradient: 'from-dark-section to-dark-black',
     },
@@ -118,7 +118,7 @@ export default function EventsSection() {
         {/* Ghost CTA Button */}
         <div className="text-center mt-12">
           <a
-            href="#events"
+            href="/events"
             className="
               inline-flex items-center gap-2 border border-white/20 text-white font-body font-semibold text-[13px] uppercase tracking-[0.08em] px-10 py-4 rounded-sm hover:border-gold hover:text-gold transition-all
               dark:border-dark-border

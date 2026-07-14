@@ -64,12 +64,12 @@ export default function MissionSection() {
           </h2>
 
           <p className="font-display italic text-[20px] text-gold mt-4">
-            &ldquo;You Belong Here.&rdquo;
+            &ldquo;We are the Amazing Family.&rdquo;
           </p>
 
           <div className="mt-8">
             <a
-              href="#about"
+              href="/about"
               className="
                 inline-flex items-center gap-2 font-body font-semibold text-[13px] uppercase tracking-[0.08em] px-6 py-3 rounded-sm transition-all
                 border border-light-charcoal text-light-charcoal hover:bg-light-mid

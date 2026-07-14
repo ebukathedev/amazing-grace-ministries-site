@@ -7,22 +7,18 @@ export default function Footer() {
     { label: 'About Us', href: '/about' },
     { label: 'Events', href: '/events' },
     { label: 'Sermons', href: '/sermons' },
-    { label: 'Give', href: '/give' },
-    { label: 'Employment', href: '#employment' },
   ]
 
   const quickLinks2 = [
+  { label: 'Give', href: '/give' },
     { label: 'Visit', href: '/plan-your-visit' },
     { label: 'Contact Us', href: '/contact' },
-    { label: 'Community', href: '#community' },
-    { label: 'Terms of Use', href: '#terms' },
-    { label: 'Privacy Policy', href: '#privacy' },
   ]
 
   const socials = [
-    { icon: Facebook, href: '#facebook' },
-    { icon: Instagram, href: '#instagram' },
-    { icon: Youtube, href: '#youtube' },
+    { icon: Facebook, href: 'https://web.facebook.com/amazinggracemn' },
+    { icon: Instagram, href: 'https://www.instagram.com/amazinggracemn' },
+    { icon: Youtube, href: 'https://www.youtube.com/channel/UCuM5Q6r7F1LpC8u6Y5C5pQ' },
   ]
 
   return (
@@ -143,7 +139,13 @@ export default function Footer() {
             </h3>
             <div className="font-body text-[14px] text-white/60 leading-[2.2]">
               <p>Sundays: 10:00 AM</p>
-              <p>Wednesdays: 7:00 PM</p>
+              <p>Mondays: Bible Study</p>
+              <p>Wednesdays: Hour of Battle</p>
+              <p>1st Saturday: Open Heavens</p>
+            </div>
+            <div className="font-body text-[12px] text-white/40 mt-4 leading-relaxed">
+              <p>Audio: 470-480-9523 or 425-436-6364</p>
+              <p>Code: 198407</p>
             </div>
           </div>
 
@@ -160,7 +162,7 @@ export default function Footer() {
             </div>
 
             <a
-              href="https://maps.google.com/?q=715+Edgerton+Street,+Saint+Paul,+MN+55130"
+              href="https://maps.app.goo.gl/yT1Xi1r9cJRBvYLz9"
               target="_blank"
               rel="noopener noreferrer"
               className="font-body font-semibold text-[13px] text-gold hover:text-gold-dark flex items-center gap-1 mt-3"
@@ -171,9 +173,29 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Stats Strip */}
+        <div className="border-t border-dark-border mt-10 pt-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div>
+            <div className="font-display font-bold text-[36px] text-gold leading-none">1400+</div>
+            <div className="font-body text-[10px] uppercase tracking-widest text-white/40 mt-1">MESSAGES PREACHED</div>
+          </div>
+          <div>
+            <div className="font-display font-bold text-[36px] text-gold leading-none">100%</div>
+            <div className="font-body text-[10px] uppercase tracking-widest text-white/40 mt-1">FULFILLED MEMBERS</div>
+          </div>
+          <div>
+            <div className="font-display font-bold text-[36px] text-gold leading-none">20+</div>
+            <div className="font-body text-[10px] uppercase tracking-widest text-white/40 mt-1">INSPIRING LEADERS</div>
+          </div>
+          <div>
+            <div className="font-display font-bold text-[36px] text-gold leading-none">100+</div>
+            <div className="font-body text-[10px] uppercase tracking-widest text-white/40 mt-1">COUNTRIES</div>
+          </div>
+        </div>
+
         {/* Copyright Bar */}
-        <div className="border-t border-dark-border mt-12 pt-6 text-center font-body text-[12px] text-white/30">
-          &copy; 2025 Amazing Grace Ministries MN &mdash; All Rights Reserved
+        <div className="border-t border-dark-border mt-10 pt-6 text-center font-body text-[12px] text-white/30">
+          &copy; 2026 Amazing Grace Ministries MN &mdash; All Rights Reserved
         </div>
       </div>
     </footer>

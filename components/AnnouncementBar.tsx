@@ -35,7 +35,7 @@ export default function AnnouncementBar() {
 
         {/* Watch Online */}
         <a
-          href="#sermons"
+          href="/sermons"
           className="flex items-center gap-2 hover:opacity-80 transition-opacity"
         >
           <PlayCircle className="w-[13px] h-[13px] text-gold" />
